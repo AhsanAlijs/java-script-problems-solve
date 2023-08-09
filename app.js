@@ -47,27 +47,59 @@
 
 // Problem-no6
 
+// let num5 = +prompt("Enter a Number");
+// let operator = prompt("Enter Operator");
+// let num6 = +prompt("Enter a Number");
+
+// if(operator === "+"){
+//     let sum = num5 + num6
+//     console.log(sum);
+// }else if (operator === "-"){
+//     let sub = num5 - num6
+//     console.log(sub);
+// }else if (operator === "*"){
+//     let Multiply = num5 * num6
+//     console.log(Multiply);
+// }else if (operator === "/"){
+//     let Divid = num5 / num6
+//     console.log(Divid);
+// }else if (operator === "%"){
+//     let Modulus = num5 % num6
+//     console.log(Modulus);
+// }else{
+//     console.log("please enter the correct values in prompt")
+// }
+
 let num5 = +prompt("Enter a Number");
 let operator = prompt("Enter Operator");
 let num6 = +prompt("Enter a Number");
 
-if(operator === "+"){
-    let sum = num5 + num6
-    console.log(sum);
-}else if (operator === "-"){
-    let sub = num5 - num6
-    console.log(sub);
-}else if (operator === "*"){
-    let Multiply = num5 * num6
-    console.log(Multiply);
-}else if (operator === "/"){
-    let Divid = num5 / num6
-    console.log(Divid);
-}else if (operator === "%"){
-    let Modulus = num5 % num6
-    console.log(Modulus);
-}else{
-    console.log("please enter the correct values in prompt")
+switch (operator) {
+    case ("+"):
+        let sum = num5 + num6
+        console.log(sum)
+        break;
+
+    case ("-"):
+        let sub = num5 - num6
+        console.log(sub)
+        break;
+
+        case ("*"):
+        let Multiply = num5 * num6
+        console.log(Multiply)
+        break;
+
+        case ("/"):
+        let Divid = num5 / num6
+        console.log(Divid)
+        break;
+
+        case ("%"):
+        let Modulus = num5 % num6
+        console.log(Modulus)
+        break;
+        default:{
+            console.log("Please Enter The Correct input in data filed")
+        }
 }
-
-
